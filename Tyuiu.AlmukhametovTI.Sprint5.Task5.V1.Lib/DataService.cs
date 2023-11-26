@@ -19,16 +19,16 @@ namespace Tyuiu.AlmukhametovTI.Sprint5.Task5.V1.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    double number = double.Parse(line);                   
+                    double number = Math.Round(double.Parse(line));                   
                     {
                         if (number % 2 == 0) 
                         {
                             sum += number; 
                         }   
                     }                   
-                }
-                return sum;
+                }              
             }
-        }                                                                                                        
-    }
+            return sum;
+        }                                                                                                    
+    } 
 }
